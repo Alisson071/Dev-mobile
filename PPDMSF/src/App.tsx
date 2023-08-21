@@ -1,6 +1,7 @@
 
 import { StyleSheet, Text, View } from "react-native"
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'
+import Example from "./Example";
 
 const Button = styled.Button``;
 
@@ -24,6 +25,7 @@ const App = () => {
                 title="texto"
                 color="red" />
             <Texxt>Texto azul</Texxt>
+            <Example text="qualquer coisa">Text</Example>
         </View>
     )
 }
