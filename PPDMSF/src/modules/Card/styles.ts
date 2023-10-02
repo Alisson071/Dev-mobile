@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 8,
     },
     rate: {
-        color: "rgba(0, 0, 0, 0.5",
+        color: "rgba(0, 0, 0, 0.5)",
     },
     rowIncraseBtn: {
         flexDirection: "row",

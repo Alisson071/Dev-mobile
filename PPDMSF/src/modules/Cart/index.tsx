@@ -13,6 +13,10 @@ interface Product{
     price: string
 }
 
+export function getProduct(product: Product){
+    return `${product.id} ${product.name} ${product.description} ${product.image} ${product.price}`;
+}
+
 const Cart = () => {
     const [cartItem, setCartItem] = useState<Product[]>([
         {id: '1', description: 'kd-tu', image: luz, name: 'Patinho de borracha', price: '9,90'},
