@@ -16,7 +16,7 @@ const Login = () => {
       } = useLogin();
 
       const navigation = useNavigation();
-      function changeScreen(){
+      function changeScreen2(){
         navigation.navigate('Home');
       }
     return(
@@ -25,7 +25,7 @@ const Login = () => {
                 <TitleLogin>Login</TitleLogin>
                 <Input value={email} margin="10px" onChange={handleOnChangeEmail} style={{backgroundColor:"#F7F7F7"}} />
                 <Input value={password} margin="10px" onChange={handleOnChangePassword} style={{backgroundColor:"#F7F7F7"}}/>
-                <Button title="ENTRAR" margin="10px" onPress={changeScreen} />
+                <Button title="ENTRAR" margin="10px" onPress={changeScreen2} />
             </ContainerPlugin>
         </View>
     );

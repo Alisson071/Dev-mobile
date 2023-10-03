@@ -3,25 +3,9 @@ import { styles } from './styles'
 import { FlatList, Image, ImageProps, SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 
-const luz = require("../../Assets/patinho.jpg");
 
-interface Product{
-    id?: string,
-    name: string,
-    description: string,
-    image: ImageProps["source"],
-    price: string
-}
-
-export function getProduct(product: Product){
-    return `${product.id} ${product.name} ${product.description} ${product.image} ${product.price}`;
-}
-
-const Cart = () => {
-    const [cartItem, setCartItem] = useState<Product[]>([
-        {id: '1', description: 'kd-tu', image: luz, name: 'Patinho de borracha', price: '9,90'},
-        {id: '2', description: 'kd-tu', image: luz, name: 'Luz', price: '9,90'}
-    ])
+const Cart = (props: any) => {
+    const [cartItem, setCartItem] = useState(props.route.params.Item)
     const navigation = useNavigation();
     function changeScreen() {
         navigation.goBack();
