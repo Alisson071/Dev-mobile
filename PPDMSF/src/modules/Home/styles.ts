@@ -67,7 +67,7 @@ height: 10%;
 `;
 
 export const TextButton = styled.Text`
-font-size: 12;
+font-size: 12px;
 font-weight: 600;
 color: white;
 `;
