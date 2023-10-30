@@ -12,10 +12,10 @@ export interface Product{
     image: ImageProps["source"],
     price: string
 }
-const Home = (props: any) => {
+const Home = () => {
     useEffect(() => {
      console.log(
-         `o AcessToken é ${props.route.params.data.accessToken}`,
+         `o AcessToken é `,
     );
     },[])
 
@@ -23,8 +23,9 @@ const Home = (props: any) => {
     //     `o AcessToken é ${props.route.params.data}`,
     //   );
     const [Item, setItem] = useState<Product[]>([
-        {id: '0', name: 'Patinho de borracha', description: "Um Pato de Borracha Jumbo para Grande Diversão! O rei dos patos de borracha... é este pato de borracha gigante.", image: require("../../Assets/patinho.jpg"), price: '7,10R$'},
-        {id: '1', name: 'Nemo de borracha', description: "Torne a hora do banho muito mais divertida com o peixinho Nemo de borracha!", image: require("../../Assets/nemo.png"), price: '9,90R$'}
+        {id: '0', name: 'Patinho de borracha', description: "Um Pato de Borracha Jumbo para Grande Diversão! O rei dos patos de borracha... é este pato de borracha gigante.", image: require("../../Assets/patinho.jpg"), price: '7.10R$'},
+        {id: '1', name: 'Nemo de borracha', description: "Torne a hora do banho muito mais divertida com o peixinho Nemo de borracha!", image: require("../../Assets/nemo.png"), price: '9.90R$'},
+        {id: '2', name: 'Tubarão de borracha', description: "Um brinquedo versátil para a imaginação criativa, fantoches de mão oferecem um padrão de brincadeira aberto que pode proporcionar horas de entretenimento enquanto seu filho encena histórias favoritas e brincadeiras de fantasia ou processa reações aos eventos atuais em suas vidas.", image: require("../../Assets/tuba.jpg"), price: '19.99R$'}
     ])
 
     const [ItemCart, setItemCart] = useState<Product[]>([])

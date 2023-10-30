@@ -4,7 +4,7 @@ export declare global{
         interface RootParamList{
             Login: undefined;
             Profile: undefined;
-            Home: {data:any};
+            Home: undefined;
             Card: data = Product;
             Cart: data = Product;
             ProductCart: undefined;
