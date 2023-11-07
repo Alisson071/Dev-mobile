@@ -66,6 +66,19 @@ height: 10%;
 
 `;
 
+export const ADD = styled.TouchableOpacity`
+bottom: 1%;
+right: 1%;
+pad: 0px;
+border-radius: 50px;
+justify-content: center;
+align-items: center;
+position: absolute;
+background-color: green;
+width: 15%;
+height: 9%;
+`
+
 export const TextButton = styled.Text`
 font-size: 12px;
 font-weight: 600;
