@@ -8,6 +8,7 @@ export declare global{
             Card: data = Product;
             Cart: data = Product;
             ProductCart: undefined;
+            CreateProduct: undefined;
         }
     }
 }

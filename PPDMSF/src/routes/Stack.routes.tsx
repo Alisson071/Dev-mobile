@@ -3,7 +3,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import Login from '../modules/login';
 import Home from '../modules/Home';
 import Cart from '../modules/Cart';
-import Card from '../modules/Card'
+import Card from '../modules/Card';
+import CreateProduct from '../modules/CreateProduct';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 
 const {Screen, Navigator, Group} = createNativeStackNavigator();
@@ -19,6 +20,7 @@ export function StackNavigator(){
                     <Screen name = "Home" component = {Home}/>
                     <Screen name = "Cart" component = {Cart}/>
                     <Screen name = "Card" component = {Card}/>
+                    <Screen name = "CreateProduct" component = {CreateProduct}/>
             </Group>
         </Navigator>
     )

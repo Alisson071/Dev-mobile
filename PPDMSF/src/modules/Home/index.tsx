@@ -36,11 +36,17 @@ const Home = () => {
     }
     function changeScreenCart(id: String){
         navigation.navigate('Cart', {Item});
-      }
+    }
+    function screenCreate(){
+        console.log("sla");
+        //navigation.navigate('CreateProduct');
+    }
     return (
 
         <View style={{height:'100%', flex:1}}>
-            <ADD><Text style = {{fontSize: 40, color: "white"}}>+</Text></ADD>
+            <ADD onPress={() => console.log("teste")}>
+                <Text style = {{fontSize: 40, color: "white"}}>+</Text>
+            </ADD>
                 <FlatList 
                     data= {Item} 
                     ItemSeparatorComponent={<View style={styles.divider}></View> as any} 
