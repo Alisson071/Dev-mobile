@@ -38,13 +38,12 @@ const Home = () => {
         navigation.navigate('Cart', {Item});
     }
     function screenCreate(){
-        console.log("sla");
-        //navigation.navigate('CreateProduct');
+        navigation.navigate('CreateProduct');
     }
     return (
 
-        <View style={{height:'100%', flex:1}}>
-            <ADD onPress={() => console.log("teste")}>
+        <View style={{ flex:1 }}>
+            <ADD onPress={screenCreate}>
                 <Text style = {{fontSize: 40, color: "white"}}>+</Text>
             </ADD>
                 <FlatList 
