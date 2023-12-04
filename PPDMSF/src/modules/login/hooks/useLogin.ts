@@ -32,7 +32,7 @@ export const useLogin = () => {
           );
 
         const resultLogin = await axios
-          .post('http://192.168.137.49:8080/auth', {
+          .post('http://192.168.137.194:8080/auth', {
             email, 
             password,
         }).then(res => {

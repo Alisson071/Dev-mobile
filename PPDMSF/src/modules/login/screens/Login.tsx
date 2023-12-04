@@ -28,7 +28,7 @@ const Login = () => {
         console.log("Entrou");
         const test = async () => {
             const token = await getItemStorage(AUTHORIZATION_KEY);
-            const resultBack = await axios.get<UserType>('http://192.168.137.49:8080/user', {
+            const resultBack = await axios.get<UserType>('http://192.168.137.194:8080/user', {
                 headers: {
                     Authorization: token,
                     'content-Type': 'application/json',
