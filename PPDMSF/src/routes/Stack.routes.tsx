@@ -6,6 +6,7 @@ import Cart from '../modules/Cart';
 import Card from '../modules/Card';
 import CreateProduct from '../modules/CreateProduct';
 import { Header } from 'react-native/Libraries/NewAppScreen';
+import Register from '../modules/Register';
 
 const {Screen, Navigator, Group} = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ export function StackNavigator(){
                     <Screen name = "Cart" component = {Cart}/>
                     <Screen name = "Card" component = {Card}/>
                     <Screen name = "CreateProduct" component = {CreateProduct}/>
+                    <Screen name = "Register" component = {Register}/>
             </Group>
         </Navigator>
     )

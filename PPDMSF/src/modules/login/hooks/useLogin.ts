@@ -24,6 +24,9 @@ export const useLogin = () => {
     console.log(
       'user ', user
     )
+    const cadastrarOnPress = async () => {
+      navigation.navigate('Register')
+    }
 
     const handleOnPress = async () => {
         
@@ -62,6 +65,7 @@ export const useLogin = () => {
         email,
         password,
         handleOnPress,
+        cadastrarOnPress,
         handleOnChangeEmail,
         handleOnChangePassword,
     };

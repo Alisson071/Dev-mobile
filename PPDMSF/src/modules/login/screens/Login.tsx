@@ -17,6 +17,7 @@ const Login = () => {
         email,
         password,
         handleOnPress,
+        cadastrarOnPress,
         handleOnChangeEmail,
         handleOnChangePassword,
       } = useLogin();
@@ -61,6 +62,7 @@ const Login = () => {
                 style={{backgroundColor:"#F7F7F7"}}
                 />
                 <Button title="ENTRAR" margin="10px" onPress={() => handleOnPress()} />
+                <Button title="CADASTRAR" margin="10px" onPress={() => cadastrarOnPress()} />
             </ContainerPlugin>
         </View>
     );
